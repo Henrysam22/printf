@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			buffer[buff_ind++] = format[i];
-			if (buff ind == BUFF_SIZE)
+			if (buff_ind == BUFF_SIZE)
 				print_buffer(buffer, &buff_ind);
 			/* write(1, &format[i], 1); */
 			printed_chars++;
@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 					flags, width, precision, size);
 			if (printed == -1)
 				return (-1);
-			printed_chars += printed
+			printed_chars += printed;
 		}
 	}
 
